@@ -1,4 +1,6 @@
-<img width="1082" height="688" alt="image" src="https://github.com/user-attachments/assets/a646d944-cf54-4efa-89d7-031793859e6e" />## Lets dive deeper into the file, remote-exec, and local-exec provisioners in Terraform, along with examples for each.
+## Lets dive deeper into the file, remote-exec, and local-exec provisioners in Terraform, along with examples for each.
+
+**Provisioner allows you to excecute scripts and commands on a resource (like EC2) during creation and destruction. By using remote-exec you can connect to the instance while instance is creating and we can run and install application like python, java or node js.**   
 
 **1. file Provisioner:**
 The file provisioner is used to copy files or directories from the local machine to a remote machine. This is useful for deploying configuration files, scripts, or other assets to a provisioned instance.
@@ -99,27 +101,45 @@ ssh-keygen -t rsa
 
 <img width="747" height="177" alt="image" src="https://github.com/user-attachments/assets/47c10f03-7fbd-47db-bf47-9d1dfa879676" />
 
-- initiate the project, plan the project and apply.
+**- initiate the project, plan the project and apply:**
 
-<img width="739" height="454" alt="image" src="https://github.com/user-attachments/assets/8b48e414-576a-440a-a54d-4195c6c70379" />
-<img width="659" height="501" alt="image" src="https://github.com/user-attachments/assets/3d53dbd1-be46-465e-895e-15241677aa86" />
+<img width="785" height="365" alt="image" src="https://github.com/user-attachments/assets/2ecf889c-39c9-42d4-9329-7e61519b07ad" />
 
-- VPC created with subnet, route table and internet gateway.
-<img width="1598" height="256" alt="image" src="https://github.com/user-attachments/assets/105a9708-7164-41bd-9330-f08941dde933" />
+<img width="1263" height="652" alt="image" src="https://github.com/user-attachments/assets/fa92d4a2-b871-47bc-ada9-d29814bd2a97" />
+
+<img width="1474" height="651" alt="image" src="https://github.com/user-attachments/assets/0199568b-e039-4ef2-a80a-b8129d863691" />
+
+<img width="1046" height="556" alt="image" src="https://github.com/user-attachments/assets/0593ffa2-aa98-4411-a68b-23ab72b281c0" />
+
+
+
+**- VPC created with subnet, route table and internet gateway:**
+  
+
+<img width="1648" height="739" alt="image" src="https://github.com/user-attachments/assets/f59c59cd-71ec-4a42-b562-1aa3e93958ee" />
+
 
 - EC2 created and connected, simultaniously installing packages.
-<img width="1469" height="256" alt="image" src="https://github.com/user-attachments/assets/aeb33e36-3731-4228-8b87-3a2012c81222" />
+  
+<img width="1105" height="612" alt="image" src="https://github.com/user-attachments/assets/c1271bfc-64a7-47d1-9647-d24f001b817c" />
+  
+<img width="953" height="744" alt="image" src="https://github.com/user-attachments/assets/2004f760-2acd-4d8f-9335-1eccf2613932" />
 
-<img width="1013" height="780" alt="image" src="https://github.com/user-attachments/assets/775dc51b-916a-4fc9-80ca-6bb1c9a91612" />
+<img width="1101" height="739" alt="image" src="https://github.com/user-attachments/assets/be9fff2a-a1b5-4456-a26d-ff1cb4ea1f4b" />
 
+<img width="1001" height="745" alt="image" src="https://github.com/user-attachments/assets/4c26efcc-72f3-412a-9048-d2b6968706e9" />
 
+**- Try login to the EC2 instance manually and check if python.py copied, preset working directory and python installed**
 
-<img width="1082" height="688" alt="image" src="https://github.com/user-attachments/assets/3e3757ac-8092-42ea-99d3-b8400e1bc61d" />
+<img width="859" height="773" alt="image" src="https://github.com/user-attachments/assets/6ccc8ae6-b966-4edb-bda2-7d8d11761d66" />
+<img width="1213" height="167" alt="image" src="https://github.com/user-attachments/assets/7570f2ad-6ed7-49e7-a63f-92462e3551af" />
 
+**- **Try access the output with public ip of EC2 instance i,e** http://54.147.114.138:80**:
 
+<img width="723" height="175" alt="image" src="https://github.com/user-attachments/assets/10938a18-52fa-47ca-bf09-07d5cfcaab3b" />
+  
 
-
-
+**Project successfully deployed by utilizing Terraform Provisioners.**
 
 
 
